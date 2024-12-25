@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contain {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-conatiner {
+  display: flex;
+  min-height: 100vh;
+  background: hsl(257, 40%, 49%);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  padding-top: 4rem;
+ 
+}
+
+.main {
+  display: flex;
+  margin: 7rem auto 1rem auto;
+  max-width: 1200px;
+}
+
+.subconatiner1 img {
+  max-width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+.subconatiner2 {
+  padding: 0 4rem;
+}
+
+.subconatiner1 , .subconatiner2 {
+  flex: 1;
+}
+
+.subconatiner2 h1 {
+  font-family: "Poppins", serif;
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+.subconatiner2 p {
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+
+.subconatiner2 button {
+  color: hsl(257, 40%, 49%);
+  background: hsl(0deg 0% 100%);
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-family: "Open Sans", serif;
+  margin-top: 0.5rem;
+  box-shadow: rgb(0 0 0 / 62%) 4px 5px 15px;
+  cursor: pointer;
+}
+
+.subconatiner2 button:hover{
+  background: hsl(300, 69%, 71%);
+  color: hsl(0deg 0% 100%);
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  max-width: 1200px;
+  padding: 1rem 4rem;
+  padding-bottom: 4rem;
+}
+
+.social i.fa-brands {
+  font-size: 1rem;
+  color: hsl(0deg 0% 100%);
+  border: 2px solid hsl(0deg 0% 100%);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+i.fa-brands.fa-facebook-f {
+  padding: 1rem 1.3rem;
+}
+
+.social i.fa-brands:hover {
+  color: hsl(300, 69%, 71%);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:970px) {
+  html {
+    font-size: 12px;
+  }
+
+  .main {
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 30px;
+}
+
+.main-conatiner {
+  background-image: url(./images/bg-mobile.svg);
+  padding: 4rem 3.5rem 0 3.5rem;
+  background-size: contain;
+}
+
+.contain img {
+  width: 60%;
+}
+
+.subconatiner2 {
+  padding: 0;
+  text-align: center;
+}
+
+.subconatiner2 h1 {
+  font-size: 2rem;
+}
+
+.subconatiner2 p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.social {
+  justify-content: center;
+}
+
+.subconatiner2 button {
+  padding: 1rem 5rem;
+}
+
+}
